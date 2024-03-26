@@ -340,7 +340,7 @@ impl Render {
                     false => BinaryColor::Off,
                 };
 
-                let p = Pixel(Point::new(x_offset + x as i32, y_offset + y as i32), c);
+                let p = Pixel(Point::new(x_offset + x as i32, y as i32), c);
                 self.display.draw_pixel(p)?
             }
         }
